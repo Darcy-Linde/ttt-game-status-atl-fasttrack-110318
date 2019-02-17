@@ -34,10 +34,10 @@ WIN_COMBINATIONS = [
     return false
   end
   
-  # #full?
-  # def full?(board)
+  #full?
+  def full?(board)
     
-  # end
+  end
   
   # #draw?
   # def draw?(board)
