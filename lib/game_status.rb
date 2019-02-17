@@ -47,10 +47,10 @@ def full?(board)
 return true  
 end
   
-  # #draw?
-  # def draw?(board)
+  #draw?
+  def draw?(board)
     
-  # end
+  end
   
   # #over?
   # def over?(board)
