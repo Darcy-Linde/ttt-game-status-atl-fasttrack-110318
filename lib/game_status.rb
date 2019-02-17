@@ -37,7 +37,7 @@ WIN_COMBINATIONS = [
   #full?
   def full?(board)
     board.each do |index|
-      if position_empty?(board, index)
+      if position_empty?(board, index) == true
         return false
       end
     end
