@@ -19,7 +19,8 @@ WIN_COMBINATIONS = [
   def won?(board)
     #iterate through all WIN_COMBINATIONS
     WIN_COMBINATIONS.each do |combo|
-      if position_taken?(board, combo[0]) && position_taken?(board, combo[1]) && position_taken?(board, combo[0])
+      if position_taken?(board, combo[0])
+        
         
   end
   
