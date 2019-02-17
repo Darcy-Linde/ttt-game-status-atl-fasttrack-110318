@@ -20,7 +20,7 @@ WIN_COMBINATIONS = [
     #iterate through all WIN_COMBINATIONS
     WIN_COMBINATIONS.each do |combo|
       if position_taken?(board, combo[0])
-        
+        if 
         
   end
   
