@@ -17,6 +17,7 @@ WIN_COMBINATIONS = [
   
   #won?
   def won?(board)
+    #iterate through all WIN_COMBINATIONS
     
   end
   
