@@ -36,11 +36,15 @@ end
   
  
 #full?
-  def full?(board)
-    count = 0
-    while count < 9
-    if position_taken?(board,count)
+def full?(board)
+  count = 0
+  while count < 9
+    if position_taken?(board,count) == true
+      return false
+    end
   end
+return true  
+end
   
   # #draw?
   # def draw?(board)
