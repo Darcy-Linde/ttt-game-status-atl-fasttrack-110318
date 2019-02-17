@@ -29,22 +29,22 @@ WIN_COMBINATIONS = [
       end
   end
   
-  #full?
-  def full?(board)
+  # #full?
+  # def full?(board)
     
-  end
+  # end
   
-  #draw?
-  def draw?(board)
+  # #draw?
+  # def draw?(board)
     
-  end
+  # end
   
-  #over?
-  def over?(board)
+  # #over?
+  # def over?(board)
     
-  end
+  # end
   
-  #winner
-  def winner(board)
+  # #winner
+  # def winner(board)
     
-  end
+  # end
