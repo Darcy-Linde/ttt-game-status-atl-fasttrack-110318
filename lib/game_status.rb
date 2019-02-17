@@ -41,9 +41,8 @@ def full?(board)
   while count < 9
     if position_taken?(board,count) == true
       return false
-    else
-      count += 1
     end
+    count += 1
   end
 return true  
 end
