@@ -36,11 +36,12 @@ WIN_COMBINATIONS = [
   
   #full?
   def full?(board)
-    if board.detect{|i| position_empty?(board, i)}
-      return false
-    else
-      return true
+    board.each do |index|
+      if position_empty?(board, index)
+        return false
+      end
     end
+  return true
   end
   
   # #draw?
