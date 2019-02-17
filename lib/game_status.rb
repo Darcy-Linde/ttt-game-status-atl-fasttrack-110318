@@ -29,10 +29,9 @@ WIN_COMBINATIONS = [
         return combo
       elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
         return combo
-      else
-        return false
       end
     end
+    return false
   end
   
   # #full?
