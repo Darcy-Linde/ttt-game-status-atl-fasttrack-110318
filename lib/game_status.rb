@@ -37,6 +37,10 @@ WIN_COMBINATIONS = [
   #full?
   def full?(board)
     if board.detect{|i| position_empty?(board, i)}
+      return false
+    else
+      return true
+    end
   end
   
   # #draw?
