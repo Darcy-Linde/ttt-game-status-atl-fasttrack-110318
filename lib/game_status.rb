@@ -15,33 +15,31 @@ WIN_COMBINATIONS = [
   [6,4,2]  # Diagonal bottom-top
   ]
   
-  #won?
-  def won?(board)
-    #iterate through all WIN_COMBINATIONS
-    WIN_COMBINATIONS.each do |combo|
-      win_index_1 = combo[0]
-      win_index_2 = combo[1]
-      win_index_3 = combo[2]
-      position_1 = board[win_index_1]
-      position_2 = board[win_index_2]
-      position_3 = board[win_index_3]
-      if position_1 == "X" && position_2 == "X" && position_3 == "X"
-        return combo
-      elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
-        return combo
-      end
+#won?
+def won?(board)
+  #iterate through all WIN_COMBINATIONS
+  WIN_COMBINATIONS.each do |combo|
+    win_index_1 = combo[0]
+    win_index_2 = combo[1]
+    win_index_3 = combo[2]
+    position_1 = board[win_index_1]
+    position_2 = board[win_index_2]
+    position_3 = board[win_index_3]
+    if position_1 == "X" && position_2 == "X" && position_3 == "X"
+      return combo
+    elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
+      return combo
     end
-    return false
   end
+  return false  
+end
   
-  #full?
+ 
+#full?
   def full?(board)
-    board.each do |index|
-      if position_empty?(board, index) == true
-        return false
-      end
-    end
-  return true
+    count = 0
+    while count < 9
+    if position_taken?(board,count)
   end
   
   # #draw?
